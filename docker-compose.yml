@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  heroku-refresher-app:
+    container_name: heroku-refresher
+    restart: always
+    build: .
+    ports:
+      - 5001:5001
+    volumes:
+      - ./app
